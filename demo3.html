@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .demo{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="demo"></div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script  src="js/zepto.js"></script>
+</body>
+<script>
+    // let demo=document.querySelector(".demo");
+    //tap  doubleTap  longTap   swipe  swipeLeft
+    $(".demo").tap=function () {
+        console.log("tap事件");
+    };
+    $(".demo").longTap=function () {
+        console.log("longTap事件");
+    }
+</script>
+</html>
